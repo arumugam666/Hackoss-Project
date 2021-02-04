@@ -1,6 +1,10 @@
 class airplane:
-    def __init__(self, spawn_location, health, initial_velocity = [0,0,0],
-                 initial_acceleration = [0,0,0]):
+    '''airplane class: 
+    Attributes: location, health, velocity, acceleration
+    Functions: set acceleration, velocity and location. 
+    AirPlane object is controlled by set acceleration function'''
+    def __init__(self, spawn_location:[float,float,float], health, initial_velocity = [float,float,float],
+        initial_acceleration = [float,float,float]):
         self.spawn_location = spawn_location
         self.location = spawn_location
         self.health = health
@@ -18,4 +22,4 @@ class airplane:
         for i in range(3):
             self.location[i] += (self.velocity[i]*time +
                                  0.5*self.acceleration[i]*time**2)
-    
+  
