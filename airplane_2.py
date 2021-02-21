@@ -3,8 +3,8 @@ class airplane:
     Attributes: location, health, velocity, acceleration
     Functions: set acceleration, velocity and location. 
     AirPlane object is controlled by set acceleration function'''
-    def __init__(self, spawn_location:[float,float,float], health, initial_velocity = [float,float,float],
-        initial_acceleration = [float,float,float]):
+    def __init__(self, spawn_location:[float,float,float], health, initial_velocity:[float,float,float],
+        initial_acceleration :[float,float,float]):
         self.spawn_location = spawn_location
         self.location = spawn_location
         self.health = health
